@@ -24,7 +24,9 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = A short description of PodTestLib.
+  s.description  = <<-DESC
+                    A short description of PodTestLib.
+                   DESC
 
   s.homepage     = "https://github.com/dengchenglin/PodTestLib"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -90,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  # s.exclude_files = "Classes/Exclude"
+  s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
